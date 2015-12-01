@@ -1,0 +1,370 @@
+fileFormatVersion: 2
+guid: 7906db3e05b114c4b90d10e1ae3599f8
+timeCreated: 1446937306
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Anchor Pin 01
+    100002: Anchor Pin 02
+    100004: Anchor Pin 03
+    100006: Anchor Pin 04
+    100008: Anchor Pin 05
+    100010: Anchor Pin 06
+    100012: Axis 01
+    100014: Axis 02
+    100016: Axle Part 01
+    100018: Axle Part 02
+    100020: Axle Part 03
+    100022: Axle Part 04
+    100024: Bhead01
+    100026: Bhead02
+    100028: Bhead03
+    100030: Bhead04
+    100032: Bhead05
+    100034: Bhead06
+    100036: Bolt 01
+    100038: Bolt 02
+    100040: Bolt 03
+    100042: Bolt 04
+    100044: Bolt 05
+    100046: Bolt 06
+    100048: C Camera
+    100050: C Camera.Target
+    100052: Cannon 01
+    100054: 'Cannon Barrel '
+    100056: Carriage Base
+    100058: Carriage Side 01
+    100060: Carriage Side 02
+    100062: Fill Light
+    100064: Fill Light.Target
+    100066: Front Axle 01
+    100068: Front Axle 02
+    100070: Front Iron 01
+    100072: Front Iron 02
+    100074: Front Washer 01
+    100076: Front Washer 02
+    100078: Front Washer 03
+    100080: Front Washer 04
+    100082: Front Washer 05
+    100084: Front Washer 06
+    100086: Front Washer 07
+    100088: Front Washer 08
+    100090: Front Washer 09
+    100092: Front Washer 10
+    100094: Front Washer 11
+    100096: Front Washer 12
+    100098: Key Light
+    100100: Key Light.Target
+    100102: Ring 01
+    100104: Ring 02
+    100106: Ring 03
+    100108: Ring 04
+    100110: Ring 05
+    100112: Ring 06
+    100114: Ring Start 01
+    100116: Ring Start 02
+    100118: Ring Start 03
+    100120: Ring Start 04
+    100122: Ring Start 05
+    100124: Ring Start 06
+    100126: //RootNode
+    100128: Tire 01
+    100130: Tire 02
+    100132: Tire 03
+    100134: Tire 04
+    400000: Anchor Pin 01
+    400002: Anchor Pin 02
+    400004: Anchor Pin 03
+    400006: Anchor Pin 04
+    400008: Anchor Pin 05
+    400010: Anchor Pin 06
+    400012: Axis 01
+    400014: Axis 02
+    400016: Axle Part 01
+    400018: Axle Part 02
+    400020: Axle Part 03
+    400022: Axle Part 04
+    400024: Bhead01
+    400026: Bhead02
+    400028: Bhead03
+    400030: Bhead04
+    400032: Bhead05
+    400034: Bhead06
+    400036: Bolt 01
+    400038: Bolt 02
+    400040: Bolt 03
+    400042: Bolt 04
+    400044: Bolt 05
+    400046: Bolt 06
+    400048: C Camera
+    400050: C Camera.Target
+    400052: Cannon 01
+    400054: 'Cannon Barrel '
+    400056: Carriage Base
+    400058: Carriage Side 01
+    400060: Carriage Side 02
+    400062: Fill Light
+    400064: Fill Light.Target
+    400066: Front Axle 01
+    400068: Front Axle 02
+    400070: Front Iron 01
+    400072: Front Iron 02
+    400074: Front Washer 01
+    400076: Front Washer 02
+    400078: Front Washer 03
+    400080: Front Washer 04
+    400082: Front Washer 05
+    400084: Front Washer 06
+    400086: Front Washer 07
+    400088: Front Washer 08
+    400090: Front Washer 09
+    400092: Front Washer 10
+    400094: Front Washer 11
+    400096: Front Washer 12
+    400098: Key Light
+    400100: Key Light.Target
+    400102: Ring 01
+    400104: Ring 02
+    400106: Ring 03
+    400108: Ring 04
+    400110: Ring 05
+    400112: Ring 06
+    400114: Ring Start 01
+    400116: Ring Start 02
+    400118: Ring Start 03
+    400120: Ring Start 04
+    400122: Ring Start 05
+    400124: Ring Start 06
+    400126: //RootNode
+    400128: Tire 01
+    400130: Tire 02
+    400132: Tire 03
+    400134: Tire 04
+    2300000: Axis 01
+    2300002: Axis 02
+    2300004: Axle Part 01
+    2300006: Axle Part 02
+    2300008: Axle Part 03
+    2300010: Axle Part 04
+    2300012: Bhead01
+    2300014: Bhead02
+    2300016: Bhead03
+    2300018: Bhead04
+    2300020: Bhead05
+    2300022: Bhead06
+    2300024: Bolt 01
+    2300026: Bolt 02
+    2300028: Bolt 03
+    2300030: Bolt 04
+    2300032: Bolt 05
+    2300034: Bolt 06
+    2300036: 'Cannon Barrel '
+    2300038: Carriage Base
+    2300040: Carriage Side 01
+    2300042: Carriage Side 02
+    2300044: Front Axle 01
+    2300046: Front Axle 02
+    2300048: Front Iron 01
+    2300050: Front Iron 02
+    2300052: Front Washer 01
+    2300054: Front Washer 02
+    2300056: Front Washer 03
+    2300058: Front Washer 04
+    2300060: Front Washer 05
+    2300062: Front Washer 06
+    2300064: Front Washer 07
+    2300066: Front Washer 08
+    2300068: Front Washer 09
+    2300070: Front Washer 10
+    2300072: Front Washer 11
+    2300074: Front Washer 12
+    2300076: Ring 01
+    2300078: Ring 02
+    2300080: Ring 03
+    2300082: Ring 04
+    2300084: Ring 05
+    2300086: Ring 06
+    2300088: Ring Start 01
+    2300090: Ring Start 02
+    2300092: Ring Start 03
+    2300094: Ring Start 04
+    2300096: Ring Start 05
+    2300098: Ring Start 06
+    2300100: Tire 01
+    2300102: Tire 02
+    2300104: Tire 03
+    2300106: Tire 04
+    3300000: Axis 01
+    3300002: Axis 02
+    3300004: Axle Part 01
+    3300006: Axle Part 02
+    3300008: Axle Part 03
+    3300010: Axle Part 04
+    3300012: Bhead01
+    3300014: Bhead02
+    3300016: Bhead03
+    3300018: Bhead04
+    3300020: Bhead05
+    3300022: Bhead06
+    3300024: Bolt 01
+    3300026: Bolt 02
+    3300028: Bolt 03
+    3300030: Bolt 04
+    3300032: Bolt 05
+    3300034: Bolt 06
+    3300036: 'Cannon Barrel '
+    3300038: Carriage Base
+    3300040: Carriage Side 01
+    3300042: Carriage Side 02
+    3300044: Front Axle 01
+    3300046: Front Axle 02
+    3300048: Front Iron 01
+    3300050: Front Iron 02
+    3300052: Front Washer 01
+    3300054: Front Washer 02
+    3300056: Front Washer 03
+    3300058: Front Washer 04
+    3300060: Front Washer 05
+    3300062: Front Washer 06
+    3300064: Front Washer 07
+    3300066: Front Washer 08
+    3300068: Front Washer 09
+    3300070: Front Washer 10
+    3300072: Front Washer 11
+    3300074: Front Washer 12
+    3300076: Ring 01
+    3300078: Ring 02
+    3300080: Ring 03
+    3300082: Ring 04
+    3300084: Ring 05
+    3300086: Ring 06
+    3300088: Ring Start 01
+    3300090: Ring Start 02
+    3300092: Ring Start 03
+    3300094: Ring Start 04
+    3300096: Ring Start 05
+    3300098: Ring Start 06
+    3300100: Tire 01
+    3300102: Tire 02
+    3300104: Tire 03
+    3300106: Tire 04
+    4300000: Carriage Base
+    4300002: Carriage Side 02
+    4300004: Axis 02
+    4300006: Front Iron 01
+    4300008: Bolt 04
+    4300010: Ring Start 04
+    4300012: Ring 04
+    4300014: Front Washer 07
+    4300016: Bhead04
+    4300018: Front Washer 08
+    4300020: Bolt 05
+    4300022: Ring Start 05
+    4300024: Ring 05
+    4300026: Front Washer 09
+    4300028: Bhead05
+    4300030: Front Washer 10
+    4300032: Bolt 06
+    4300034: Ring Start 06
+    4300036: Ring 06
+    4300038: Front Washer 11
+    4300040: Bhead06
+    4300042: Front Washer 12
+    4300044: Carriage Side 01
+    4300046: Axis 01
+    4300048: 'Cannon Barrel '
+    4300050: Front Iron 02
+    4300052: Bolt 01
+    4300054: Front Washer 01
+    4300056: Bhead01
+    4300058: Front Washer 02
+    4300060: Ring Start 01
+    4300062: Ring 01
+    4300064: Bolt 02
+    4300066: Front Washer 03
+    4300068: Bhead02
+    4300070: Front Washer 04
+    4300072: Ring Start 02
+    4300074: Ring 02
+    4300076: Bolt 03
+    4300078: Ring Start 03
+    4300080: Ring 03
+    4300082: Front Washer 05
+    4300084: Bhead03
+    4300086: Front Washer 06
+    4300088: Front Axle 01
+    4300090: Axle Part 01
+    4300092: Axle Part 02
+    4300094: Tire 04
+    4300096: Front Axle 02
+    4300098: Axle Part 04
+    4300100: Tire 01
+    4300102: Tire 02
+    4300104: Axle Part 03
+    4300106: Tire 03
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

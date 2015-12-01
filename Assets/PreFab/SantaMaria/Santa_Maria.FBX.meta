@@ -1,0 +1,1043 @@
+fileFormatVersion: 2
+guid: ee8e40343b793d948ad4054638050216
+timeCreated: 1446937290
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ALCANTARI0
+    100002: ALCANTARI1
+    100004: ALCANTARI2
+    100006: ALCANTARIL
+    100008: AMARRAS
+    100010: AMARRAS 2
+    100012: AMARRAS 3
+    100014: AMARRAS 4
+    100016: AMARRAS 5
+    100018: AMARRAS 6
+    100020: ancho cuer
+    100022: Baranda 10
+    100024: Baranda 11
+    100026: Baranda 12
+    100028: Baranda 13
+    100030: Baranda 14
+    100032: Baranda 15
+    100034: Baranda 16
+    100036: Baranda 17
+    100038: Baranda 18
+    100040: Baranda 19
+    100042: Baranda 20
+    100044: Baranda 21
+    100046: Baranda 22
+    100048: BARANDA BA
+    100050: Baranda e0
+    100052: Baranda e1
+    100054: Baranda e2
+    100056: Baranda e3
+    100058: Baranda e4
+    100060: Baranda e5
+    100062: Baranda e6
+    100064: Baranda e7
+    100066: Baranda e8
+    100068: Baranda e9
+    100070: Baranda es
+    100072: BARANDA I0
+    100074: BARANDA IN
+    100076: BARRIL
+    100078: BARRIL01
+    100080: BARRIL02
+    100082: BARRIL03
+    100084: base de la
+    100086: Box01
+    100088: Box04
+    100090: CONTRA M10
+    100092: CONTRA MA0
+    100094: CONTRA MA1
+    100096: CONTRA MA2
+    100098: CONTRA MA3
+    100100: CONTRA MA4
+    100102: CONTRA MA5
+    100104: CONTRA MA6
+    100106: CONTRA MA7
+    100108: CONTRA MA8
+    100110: CONTRA MA9
+    100112: CONTRA MAS
+    100114: Corte casc
+    100116: 'Cuerda '
+    100118: Cuerda  Ma
+    100120: Cuerda 01
+    100122: 'cUERDA DE '
+    100124: cUERDA DE0
+    100126: cUERDA DE1
+    100128: cUERDA DE2
+    100130: cuerda m10
+    100132: cuerda m11
+    100134: cuerda m12
+    100136: cuerda m13
+    100138: cuerda m14
+    100140: cuerda m15
+    100142: cuerda m16
+    100144: cuerda m17
+    100146: cuerda m18
+    100148: cuerda m19
+    100150: cuerda m20
+    100152: cuerda m21
+    100154: cuerda m22
+    100156: cuerda m23
+    100158: cuerda m24
+    100160: cuerda m25
+    100162: cuerda m26
+    100164: cuerda m27
+    100166: cuerda m28
+    100168: cuerda m29
+    100170: cuerda m30
+    100172: cuerda m31
+    100174: cuerda m32
+    100176: cuerda m33
+    100178: cuerda m34
+    100180: cuerda m35
+    100182: cuerda m36
+    100184: cuerda m37
+    100186: cuerda m38
+    100188: cuerda m39
+    100190: cuerda m40
+    100192: cuerda m41
+    100194: cuerda m42
+    100196: cuerda m43
+    100198: cuerda m44
+    100200: cuerda m45
+    100202: cuerda m46
+    100204: cuerda m47
+    100206: cuerda m48
+    100208: cuerda m49
+    100210: cuerda m50
+    100212: cuerda m51
+    100214: cuerda m52
+    100216: cuerda m53
+    100218: cuerda m54
+    100220: cuerda m55
+    100222: cuerda m56
+    100224: cuerda m57
+    100226: cuerda m58
+    100228: CUERDA MA0
+    100230: Cuerda ma0
+    100232: cuerda ma0
+    100234: CUERDA MA1
+    100236: cuerda ma1
+    100238: CUERDA MA2
+    100240: cuerda ma2
+    100242: CUERDA MA3
+    100244: cuerda ma3
+    100246: CUERDA MA4
+    100248: cuerda ma4
+    100250: cuerda ma5
+    100252: cuerda ma6
+    100254: cuerda ma7
+    100256: cuerda ma8
+    100258: cuerda ma9
+    100260: CUERDA MAS
+    100262: Cuerda mas
+    100264: cuerda mas
+    100266: Cuerda Pr0
+    100268: Cuerda Pr1
+    100270: Cuerda Pr2
+    100272: Cuerda Pro
+    100274: Cylinder01
+    100276: DETALLE PO
+    100278: Helix01
+    100280: Helix02
+    100282: Helix03
+    100284: Helix04
+    100286: Helix05
+    100288: Line01
+    100290: Line08
+    100292: Line09
+    100294: Line10
+    100296: Line12
+    100298: Line13
+    100300: Loft01
+    100302: Loft02
+    100304: Loft03
+    100306: Loft04
+    100308: Loft05
+    100310: Loft06
+    100312: Loft07
+    100314: Loft08
+    100316: Loft09
+    100318: Loft10
+    100320: Loft11
+    100322: Loft12
+    100324: Loft13
+    100326: Loft14
+    100328: Loft15
+    100330: Loft16
+    100332: Loft17
+    100334: Loft18
+    100336: Loft19
+    100338: Loft20
+    100340: Loft21
+    100342: Loft22
+    100344: Loft23
+    100346: Loft24
+    100348: Loft25
+    100350: Loft26
+    100352: Loft27
+    100354: Loft28
+    100356: Loft29
+    100358: Loft30
+    100360: Loft31
+    100362: Loft32
+    100364: Loft33
+    100366: Loft34
+    100368: Loft35
+    100370: Loft36
+    100372: Loft37
+    100374: Loft38
+    100376: Loft39
+    100378: Loft40
+    100380: Loft41
+    100382: Loft42
+    100384: Loft43
+    100386: Loft44
+    100388: Loft45
+    100390: Loft46
+    100392: Loft47
+    100394: Loft48
+    100396: Loft49
+    100398: Loft50
+    100400: Loft51
+    100402: Loft52
+    100404: Loft53
+    100406: Loft54
+    100408: Loft55
+    100410: Loft56
+    100412: Loft57
+    100414: MASTIL
+    100416: MASTIL01
+    100418: MASTIL02
+    100420: MASTIL03
+    100422: PIOS DE LA
+    100424: planta ba0
+    100426: planta bar
+    100428: PUERTA
+    100430: QuadPatch0
+    100432: quilla
+    100434: //RootNode
+    100436: Surface01
+    100438: Surface02
+    100440: Surface03
+    100442: Surface04
+    100444: timon
+    100446: VELA
+    100448: VELA01
+    100450: VELA02
+    100452: VELA03
+    100454: VENTANA P0
+    100456: VENTANA PO
+    100458: Vertice 10
+    100460: Vertice 11
+    100462: Vertice 12
+    100464: Vertice 13
+    100466: Vertice V0
+    100468: Vertice V1
+    100470: Vertice V2
+    100472: Vertice V3
+    100474: Vertice V4
+    100476: Vertice V5
+    100478: Vertice V6
+    100480: Vertice V7
+    100482: Vertice V8
+    100484: Vertice V9
+    100486: Vertice Ve
+    400000: ALCANTARI0
+    400002: ALCANTARI1
+    400004: ALCANTARI2
+    400006: ALCANTARIL
+    400008: AMARRAS
+    400010: AMARRAS 2
+    400012: AMARRAS 3
+    400014: AMARRAS 4
+    400016: AMARRAS 5
+    400018: AMARRAS 6
+    400020: ancho cuer
+    400022: Baranda 10
+    400024: Baranda 11
+    400026: Baranda 12
+    400028: Baranda 13
+    400030: Baranda 14
+    400032: Baranda 15
+    400034: Baranda 16
+    400036: Baranda 17
+    400038: Baranda 18
+    400040: Baranda 19
+    400042: Baranda 20
+    400044: Baranda 21
+    400046: Baranda 22
+    400048: BARANDA BA
+    400050: Baranda e0
+    400052: Baranda e1
+    400054: Baranda e2
+    400056: Baranda e3
+    400058: Baranda e4
+    400060: Baranda e5
+    400062: Baranda e6
+    400064: Baranda e7
+    400066: Baranda e8
+    400068: Baranda e9
+    400070: Baranda es
+    400072: BARANDA I0
+    400074: BARANDA IN
+    400076: BARRIL
+    400078: BARRIL01
+    400080: BARRIL02
+    400082: BARRIL03
+    400084: base de la
+    400086: Box01
+    400088: Box04
+    400090: CONTRA M10
+    400092: CONTRA MA0
+    400094: CONTRA MA1
+    400096: CONTRA MA2
+    400098: CONTRA MA3
+    400100: CONTRA MA4
+    400102: CONTRA MA5
+    400104: CONTRA MA6
+    400106: CONTRA MA7
+    400108: CONTRA MA8
+    400110: CONTRA MA9
+    400112: CONTRA MAS
+    400114: Corte casc
+    400116: 'Cuerda '
+    400118: Cuerda  Ma
+    400120: Cuerda 01
+    400122: 'cUERDA DE '
+    400124: cUERDA DE0
+    400126: cUERDA DE1
+    400128: cUERDA DE2
+    400130: cuerda m10
+    400132: cuerda m11
+    400134: cuerda m12
+    400136: cuerda m13
+    400138: cuerda m14
+    400140: cuerda m15
+    400142: cuerda m16
+    400144: cuerda m17
+    400146: cuerda m18
+    400148: cuerda m19
+    400150: cuerda m20
+    400152: cuerda m21
+    400154: cuerda m22
+    400156: cuerda m23
+    400158: cuerda m24
+    400160: cuerda m25
+    400162: cuerda m26
+    400164: cuerda m27
+    400166: cuerda m28
+    400168: cuerda m29
+    400170: cuerda m30
+    400172: cuerda m31
+    400174: cuerda m32
+    400176: cuerda m33
+    400178: cuerda m34
+    400180: cuerda m35
+    400182: cuerda m36
+    400184: cuerda m37
+    400186: cuerda m38
+    400188: cuerda m39
+    400190: cuerda m40
+    400192: cuerda m41
+    400194: cuerda m42
+    400196: cuerda m43
+    400198: cuerda m44
+    400200: cuerda m45
+    400202: cuerda m46
+    400204: cuerda m47
+    400206: cuerda m48
+    400208: cuerda m49
+    400210: cuerda m50
+    400212: cuerda m51
+    400214: cuerda m52
+    400216: cuerda m53
+    400218: cuerda m54
+    400220: cuerda m55
+    400222: cuerda m56
+    400224: cuerda m57
+    400226: cuerda m58
+    400228: CUERDA MA0
+    400230: Cuerda ma0
+    400232: cuerda ma0
+    400234: CUERDA MA1
+    400236: cuerda ma1
+    400238: CUERDA MA2
+    400240: cuerda ma2
+    400242: CUERDA MA3
+    400244: cuerda ma3
+    400246: CUERDA MA4
+    400248: cuerda ma4
+    400250: cuerda ma5
+    400252: cuerda ma6
+    400254: cuerda ma7
+    400256: cuerda ma8
+    400258: cuerda ma9
+    400260: CUERDA MAS
+    400262: Cuerda mas
+    400264: cuerda mas
+    400266: Cuerda Pr0
+    400268: Cuerda Pr1
+    400270: Cuerda Pr2
+    400272: Cuerda Pro
+    400274: Cylinder01
+    400276: DETALLE PO
+    400278: Helix01
+    400280: Helix02
+    400282: Helix03
+    400284: Helix04
+    400286: Helix05
+    400288: Line01
+    400290: Line08
+    400292: Line09
+    400294: Line10
+    400296: Line12
+    400298: Line13
+    400300: Loft01
+    400302: Loft02
+    400304: Loft03
+    400306: Loft04
+    400308: Loft05
+    400310: Loft06
+    400312: Loft07
+    400314: Loft08
+    400316: Loft09
+    400318: Loft10
+    400320: Loft11
+    400322: Loft12
+    400324: Loft13
+    400326: Loft14
+    400328: Loft15
+    400330: Loft16
+    400332: Loft17
+    400334: Loft18
+    400336: Loft19
+    400338: Loft20
+    400340: Loft21
+    400342: Loft22
+    400344: Loft23
+    400346: Loft24
+    400348: Loft25
+    400350: Loft26
+    400352: Loft27
+    400354: Loft28
+    400356: Loft29
+    400358: Loft30
+    400360: Loft31
+    400362: Loft32
+    400364: Loft33
+    400366: Loft34
+    400368: Loft35
+    400370: Loft36
+    400372: Loft37
+    400374: Loft38
+    400376: Loft39
+    400378: Loft40
+    400380: Loft41
+    400382: Loft42
+    400384: Loft43
+    400386: Loft44
+    400388: Loft45
+    400390: Loft46
+    400392: Loft47
+    400394: Loft48
+    400396: Loft49
+    400398: Loft50
+    400400: Loft51
+    400402: Loft52
+    400404: Loft53
+    400406: Loft54
+    400408: Loft55
+    400410: Loft56
+    400412: Loft57
+    400414: MASTIL
+    400416: MASTIL01
+    400418: MASTIL02
+    400420: MASTIL03
+    400422: PIOS DE LA
+    400424: planta ba0
+    400426: planta bar
+    400428: PUERTA
+    400430: QuadPatch0
+    400432: quilla
+    400434: //RootNode
+    400436: Surface01
+    400438: Surface02
+    400440: Surface03
+    400442: Surface04
+    400444: timon
+    400446: VELA
+    400448: VELA01
+    400450: VELA02
+    400452: VELA03
+    400454: VENTANA P0
+    400456: VENTANA PO
+    400458: Vertice 10
+    400460: Vertice 11
+    400462: Vertice 12
+    400464: Vertice 13
+    400466: Vertice V0
+    400468: Vertice V1
+    400470: Vertice V2
+    400472: Vertice V3
+    400474: Vertice V4
+    400476: Vertice V5
+    400478: Vertice V6
+    400480: Vertice V7
+    400482: Vertice V8
+    400484: Vertice V9
+    400486: Vertice Ve
+    2300000: ALCANTARI0
+    2300002: ALCANTARI1
+    2300004: ALCANTARI2
+    2300006: ALCANTARIL
+    2300008: AMARRAS
+    2300010: AMARRAS 2
+    2300012: AMARRAS 3
+    2300014: AMARRAS 4
+    2300016: AMARRAS 5
+    2300018: AMARRAS 6
+    2300020: ancho cuer
+    2300022: Baranda 10
+    2300024: Baranda 11
+    2300026: Baranda 12
+    2300028: Baranda 13
+    2300030: Baranda 14
+    2300032: Baranda 15
+    2300034: Baranda 16
+    2300036: Baranda 17
+    2300038: Baranda 18
+    2300040: Baranda 19
+    2300042: Baranda 20
+    2300044: Baranda 21
+    2300046: Baranda 22
+    2300048: BARANDA BA
+    2300050: Baranda e0
+    2300052: Baranda e1
+    2300054: Baranda e2
+    2300056: Baranda e3
+    2300058: Baranda e4
+    2300060: Baranda e5
+    2300062: Baranda e6
+    2300064: Baranda e7
+    2300066: Baranda e8
+    2300068: Baranda e9
+    2300070: Baranda es
+    2300072: BARANDA I0
+    2300074: BARANDA IN
+    2300076: BARRIL
+    2300078: BARRIL01
+    2300080: BARRIL02
+    2300082: BARRIL03
+    2300084: base de la
+    2300086: Box01
+    2300088: Box04
+    2300090: CONTRA M10
+    2300092: CONTRA MA1
+    2300094: CONTRA MA2
+    2300096: CONTRA MA4
+    2300098: CONTRA MA5
+    2300100: CONTRA MA7
+    2300102: CONTRA MA8
+    2300104: CONTRA MA9
+    2300106: CONTRA MAS
+    2300108: Corte casc
+    2300110: 'cUERDA DE '
+    2300112: cUERDA DE0
+    2300114: cUERDA DE1
+    2300116: cUERDA DE2
+    2300118: CUERDA MA0
+    2300120: CUERDA MA1
+    2300122: CUERDA MA2
+    2300124: CUERDA MA3
+    2300126: CUERDA MA4
+    2300128: CUERDA MAS
+    2300130: Cylinder01
+    2300132: DETALLE PO
+    2300134: Line01
+    2300136: Loft01
+    2300138: Loft02
+    2300140: Loft03
+    2300142: Loft04
+    2300144: Loft05
+    2300146: Loft06
+    2300148: Loft07
+    2300150: Loft08
+    2300152: Loft09
+    2300154: Loft10
+    2300156: Loft11
+    2300158: Loft12
+    2300160: Loft13
+    2300162: Loft14
+    2300164: Loft15
+    2300166: Loft16
+    2300168: Loft17
+    2300170: Loft18
+    2300172: Loft19
+    2300174: Loft20
+    2300176: Loft21
+    2300178: Loft22
+    2300180: Loft23
+    2300182: Loft24
+    2300184: Loft25
+    2300186: Loft26
+    2300188: Loft27
+    2300190: Loft28
+    2300192: Loft29
+    2300194: Loft30
+    2300196: Loft31
+    2300198: Loft32
+    2300200: Loft33
+    2300202: Loft34
+    2300204: Loft35
+    2300206: Loft36
+    2300208: Loft37
+    2300210: Loft38
+    2300212: Loft39
+    2300214: Loft40
+    2300216: Loft41
+    2300218: Loft42
+    2300220: Loft43
+    2300222: Loft44
+    2300224: Loft45
+    2300226: Loft46
+    2300228: Loft47
+    2300230: Loft48
+    2300232: Loft49
+    2300234: Loft50
+    2300236: Loft51
+    2300238: Loft52
+    2300240: Loft53
+    2300242: Loft54
+    2300244: Loft55
+    2300246: Loft56
+    2300248: Loft57
+    2300250: MASTIL
+    2300252: MASTIL01
+    2300254: MASTIL02
+    2300256: MASTIL03
+    2300258: PIOS DE LA
+    2300260: planta ba0
+    2300262: planta bar
+    2300264: PUERTA
+    2300266: QuadPatch0
+    2300268: quilla
+    2300270: Surface01
+    2300272: Surface02
+    2300274: Surface03
+    2300276: Surface04
+    2300278: timon
+    2300280: VELA
+    2300282: VELA01
+    2300284: VELA02
+    2300286: VELA03
+    2300288: VENTANA P0
+    2300290: VENTANA PO
+    2300292: Vertice 10
+    2300294: Vertice 11
+    2300296: Vertice 12
+    2300298: Vertice 13
+    2300300: Vertice V0
+    2300302: Vertice V1
+    2300304: Vertice V2
+    2300306: Vertice V3
+    2300308: Vertice V4
+    2300310: Vertice V5
+    2300312: Vertice V6
+    2300314: Vertice V7
+    2300316: Vertice V8
+    2300318: Vertice V9
+    2300320: Vertice Ve
+    3300000: ALCANTARI0
+    3300002: ALCANTARI1
+    3300004: ALCANTARI2
+    3300006: ALCANTARIL
+    3300008: AMARRAS
+    3300010: AMARRAS 2
+    3300012: AMARRAS 3
+    3300014: AMARRAS 4
+    3300016: AMARRAS 5
+    3300018: AMARRAS 6
+    3300020: ancho cuer
+    3300022: Baranda 10
+    3300024: Baranda 11
+    3300026: Baranda 12
+    3300028: Baranda 13
+    3300030: Baranda 14
+    3300032: Baranda 15
+    3300034: Baranda 16
+    3300036: Baranda 17
+    3300038: Baranda 18
+    3300040: Baranda 19
+    3300042: Baranda 20
+    3300044: Baranda 21
+    3300046: Baranda 22
+    3300048: BARANDA BA
+    3300050: Baranda e0
+    3300052: Baranda e1
+    3300054: Baranda e2
+    3300056: Baranda e3
+    3300058: Baranda e4
+    3300060: Baranda e5
+    3300062: Baranda e6
+    3300064: Baranda e7
+    3300066: Baranda e8
+    3300068: Baranda e9
+    3300070: Baranda es
+    3300072: BARANDA I0
+    3300074: BARANDA IN
+    3300076: BARRIL
+    3300078: BARRIL01
+    3300080: BARRIL02
+    3300082: BARRIL03
+    3300084: base de la
+    3300086: Box01
+    3300088: Box04
+    3300090: CONTRA M10
+    3300092: CONTRA MA1
+    3300094: CONTRA MA2
+    3300096: CONTRA MA4
+    3300098: CONTRA MA5
+    3300100: CONTRA MA7
+    3300102: CONTRA MA8
+    3300104: CONTRA MA9
+    3300106: CONTRA MAS
+    3300108: Corte casc
+    3300110: 'cUERDA DE '
+    3300112: cUERDA DE0
+    3300114: cUERDA DE1
+    3300116: cUERDA DE2
+    3300118: CUERDA MA0
+    3300120: CUERDA MA1
+    3300122: CUERDA MA2
+    3300124: CUERDA MA3
+    3300126: CUERDA MA4
+    3300128: CUERDA MAS
+    3300130: Cylinder01
+    3300132: DETALLE PO
+    3300134: Line01
+    3300136: Loft01
+    3300138: Loft02
+    3300140: Loft03
+    3300142: Loft04
+    3300144: Loft05
+    3300146: Loft06
+    3300148: Loft07
+    3300150: Loft08
+    3300152: Loft09
+    3300154: Loft10
+    3300156: Loft11
+    3300158: Loft12
+    3300160: Loft13
+    3300162: Loft14
+    3300164: Loft15
+    3300166: Loft16
+    3300168: Loft17
+    3300170: Loft18
+    3300172: Loft19
+    3300174: Loft20
+    3300176: Loft21
+    3300178: Loft22
+    3300180: Loft23
+    3300182: Loft24
+    3300184: Loft25
+    3300186: Loft26
+    3300188: Loft27
+    3300190: Loft28
+    3300192: Loft29
+    3300194: Loft30
+    3300196: Loft31
+    3300198: Loft32
+    3300200: Loft33
+    3300202: Loft34
+    3300204: Loft35
+    3300206: Loft36
+    3300208: Loft37
+    3300210: Loft38
+    3300212: Loft39
+    3300214: Loft40
+    3300216: Loft41
+    3300218: Loft42
+    3300220: Loft43
+    3300222: Loft44
+    3300224: Loft45
+    3300226: Loft46
+    3300228: Loft47
+    3300230: Loft48
+    3300232: Loft49
+    3300234: Loft50
+    3300236: Loft51
+    3300238: Loft52
+    3300240: Loft53
+    3300242: Loft54
+    3300244: Loft55
+    3300246: Loft56
+    3300248: Loft57
+    3300250: MASTIL
+    3300252: MASTIL01
+    3300254: MASTIL02
+    3300256: MASTIL03
+    3300258: PIOS DE LA
+    3300260: planta ba0
+    3300262: planta bar
+    3300264: PUERTA
+    3300266: QuadPatch0
+    3300268: quilla
+    3300270: Surface01
+    3300272: Surface02
+    3300274: Surface03
+    3300276: Surface04
+    3300278: timon
+    3300280: VELA
+    3300282: VELA01
+    3300284: VELA02
+    3300286: VELA03
+    3300288: VENTANA P0
+    3300290: VENTANA PO
+    3300292: Vertice 10
+    3300294: Vertice 11
+    3300296: Vertice 12
+    3300298: Vertice 13
+    3300300: Vertice V0
+    3300302: Vertice V1
+    3300304: Vertice V2
+    3300306: Vertice V3
+    3300308: Vertice V4
+    3300310: Vertice V5
+    3300312: Vertice V6
+    3300314: Vertice V7
+    3300316: Vertice V8
+    3300318: Vertice V9
+    3300320: Vertice Ve
+    4300000: ancho cuer
+    4300002: Corte casc
+    4300004: Vertice Ve
+    4300006: Vertice V0
+    4300008: Vertice V1
+    4300010: Vertice V2
+    4300012: Vertice V3
+    4300014: Vertice V4
+    4300016: Vertice V5
+    4300018: Vertice V6
+    4300020: Vertice V7
+    4300022: Vertice V8
+    4300024: Vertice V9
+    4300026: Vertice 10
+    4300028: Vertice 11
+    4300030: Vertice 12
+    4300032: Vertice 13
+    4300034: planta bar
+    4300036: planta ba0
+    4300038: Box01
+    4300040: PIOS DE LA
+    4300042: quilla
+    4300044: base de la
+    4300046: timon
+    4300048: DETALLE PO
+    4300050: BARANDA BA
+    4300052: Box04
+    4300054: VENTANA PO
+    4300056: VENTANA P0
+    4300058: BARANDA IN
+    4300060: BARANDA I0
+    4300062: MASTIL
+    4300064: Line01
+    4300066: MASTIL01
+    4300068: MASTIL02
+    4300070: Baranda es
+    4300072: AMARRAS 4
+    4300074: CONTRA MAS
+    4300076: AMARRAS 5
+    4300078: BARRIL
+    4300080: BARRIL01
+    4300082: ALCANTARIL
+    4300084: BARRIL02
+    4300086: BARRIL03
+    4300088: ALCANTARI0
+    4300090: ALCANTARI1
+    4300092: ALCANTARI2
+    4300094: PUERTA
+    4300096: Baranda e0
+    4300098: 'cUERDA DE '
+    4300100: cUERDA DE0
+    4300102: CUERDA MAS
+    4300104: Loft11
+    4300106: Loft12
+    4300108: Loft13
+    4300110: Loft14
+    4300112: Loft15
+    4300114: Loft16
+    4300116: Loft17
+    4300118: Loft18
+    4300120: Loft19
+    4300122: AMARRAS 3
+    4300124: AMARRAS 2
+    4300126: AMARRAS
+    4300128: AMARRAS 6
+    4300130: cUERDA DE1
+    4300132: cUERDA DE2
+    4300134: Loft01
+    4300136: Loft56
+    4300138: Loft22
+    4300140: Loft23
+    4300142: CUERDA MA0
+    4300144: Loft02
+    4300146: Loft03
+    4300148: Loft04
+    4300150: Loft05
+    4300152: Loft06
+    4300154: Loft07
+    4300156: Loft08
+    4300158: Loft09
+    4300160: Loft10
+    4300162: Baranda e1
+    4300164: Baranda e2
+    4300166: Baranda e3
+    4300168: Baranda e4
+    4300170: Baranda e5
+    4300172: Baranda e6
+    4300174: Baranda e7
+    4300176: Baranda e8
+    4300178: Baranda e9
+    4300180: Baranda 10
+    4300182: Baranda 11
+    4300184: Loft32
+    4300186: Baranda 12
+    4300188: Baranda 13
+    4300190: Baranda 14
+    4300192: Baranda 15
+    4300194: Baranda 16
+    4300196: Baranda 17
+    4300198: Baranda 18
+    4300200: Baranda 19
+    4300202: Baranda 20
+    4300204: Baranda 21
+    4300206: Baranda 22
+    4300208: CUERDA MA1
+    4300210: Loft20
+    4300212: Loft21
+    4300214: Loft24
+    4300216: Loft25
+    4300218: Loft26
+    4300220: Loft27
+    4300222: Loft28
+    4300224: CUERDA MA2
+    4300226: Loft41
+    4300228: Loft29
+    4300230: Loft30
+    4300232: Loft31
+    4300234: Loft43
+    4300236: Loft33
+    4300238: Loft34
+    4300240: Loft35
+    4300242: Loft36
+    4300244: Loft37
+    4300246: CUERDA MA3
+    4300248: Loft55
+    4300250: Loft38
+    4300252: Loft39
+    4300254: Loft40
+    4300256: Loft42
+    4300258: Loft44
+    4300260: Loft45
+    4300262: Loft46
+    4300264: CUERDA MA4
+    4300266: Loft47
+    4300268: Loft48
+    4300270: Loft49
+    4300272: Loft53
+    4300274: Loft52
+    4300276: Loft50
+    4300278: Loft51
+    4300280: Loft54
+    4300282: Cylinder01
+    4300284: MASTIL03
+    4300286: Loft57
+    4300288: Surface04
+    4300290: Surface02
+    4300292: Surface01
+    4300294: Surface03
+    4300296: VELA03
+    4300298: VELA
+    4300300: VELA01
+    4300302: VELA02
+    4300304: QuadPatch0
+    4300306: CONTRA MA1
+    4300308: CONTRA MA2
+    4300310: CONTRA MA4
+    4300312: CONTRA MA5
+    4300314: CONTRA MA7
+    4300316: CONTRA MA8
+    4300318: CONTRA MA9
+    4300320: CONTRA M10
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

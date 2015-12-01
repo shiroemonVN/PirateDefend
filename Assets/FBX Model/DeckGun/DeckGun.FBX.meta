@@ -1,0 +1,109 @@
+fileFormatVersion: 2
+guid: 880a9db3a5899d243bec8992b6f48328
+timeCreated: 1446937197
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Ballistic shell
+    100002: Breach door
+    100004: //RootNode
+    100006: Gun barrel
+    100008: Gun barrel02
+    100010: Loft01
+    100012: Loft02
+    100014: Recoil cylinder
+    400000: Ballistic shell
+    400002: Breach door
+    400004: //RootNode
+    400006: Gun barrel
+    400008: Gun barrel02
+    400010: Loft01
+    400012: Loft02
+    400014: Recoil cylinder
+    2300000: Ballistic shell
+    2300002: Breach door
+    2300004: Gun barrel
+    2300006: Gun barrel02
+    2300008: Loft01
+    2300010: Loft02
+    2300012: Recoil cylinder
+    3300000: Ballistic shell
+    3300002: Breach door
+    3300004: Gun barrel
+    3300006: Gun barrel02
+    3300008: Loft01
+    3300010: Loft02
+    3300012: Recoil cylinder
+    4300000: Gun barrel
+    4300002: Ballistic shell
+    4300004: Breach door
+    4300006: Recoil cylinder
+    4300008: Loft01
+    4300010: Loft02
+    4300012: Gun barrel02
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
