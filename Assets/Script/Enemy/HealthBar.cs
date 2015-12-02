@@ -6,6 +6,7 @@ public class HealthBar : MonoBehaviour {
     TextMesh tm;
 	// Use this for initialization
 	void Start () {
+        Health = (int)gameObject.GetComponent<Monster>().health;
         tm = GetComponent<TextMesh>();
         tm.text = "-";
         for(int i=1; i<Health/10;i++)

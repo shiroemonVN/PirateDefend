@@ -5,6 +5,7 @@ public class Monster : MonoBehaviour {
 	public float health;
 	public float score;
 	public int gold;
+    public float shield;
 	// Use this for initialization
 	void Start () {
 	    
