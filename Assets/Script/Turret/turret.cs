@@ -6,6 +6,7 @@ public class turret : MonoBehaviour {
 	public bool antiGround;
 	public int barels;
 	public int cost;
+	public GameObject appearEfect;
 	public GameObject nextLv;
 	public GameObject bullet;
 	public float range;
@@ -19,6 +20,8 @@ public class turret : MonoBehaviour {
     public static bool isUpraded;
    
 	void Start(){
+		GameObject temp=(GameObject)Instantiate (appearEfect,transform.position,Quaternion.identity);
+		Destroy (temp, 5);
         isClicked = false;
         isUpraded = false;
 		barrel = new GameObject[barels];
