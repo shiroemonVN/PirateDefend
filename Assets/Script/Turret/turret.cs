@@ -3,7 +3,8 @@ using System.Collections;
 
 public class turret : MonoBehaviour {
     public bool antiAir;
-	public int lv;
+	public bool antiGround;
+	public int barels;
 	public int cost;
 	public GameObject nextLv;
 	public GameObject bullet;
@@ -20,10 +21,10 @@ public class turret : MonoBehaviour {
 	void Start(){
         isClicked = false;
         isUpraded = false;
-		barrel = new GameObject[lv + 1];
+		barrel = new GameObject[barels];
 		head =gameObject.transform.Find("HeadControll").gameObject;
 		GameObject headControll =head.transform.Find("Head").gameObject;
-		for (int i=0; i<lv+1; i++) {
+		for (int i=0; i<barels; i++) {
 			barrel [i] = headControll.transform.Find ("Barrel" + i).gameObject;
 		}
         //Debug.Log(this.nextLv);
@@ -44,9 +45,9 @@ public class turret : MonoBehaviour {
             int i = 0;
             while (i < hitColliders.Length)
             {
-                if (antiAir)
+                if (antiAir&&!antiGround)
                 {
-                    if (hitColliders[i].GetComponent<FlyingEnemy>() || hitColliders[i].GetComponent<Monster>())
+                    if (hitColliders[i].GetComponent<FlyingEnemy>())
                     {
                         enemy = hitColliders[i].gameObject;
                         lockOn = true;
@@ -56,7 +57,8 @@ public class turret : MonoBehaviour {
                         i++;
                     
                 }
-                else if (hitColliders[i].GetComponent<Monster>() && hitColliders[i].GetComponent<FlyingEnemy>()==false)
+				if(antiGround&&!antiAir){
+                if (hitColliders[i].GetComponent<Monster>() && !hitColliders[i].GetComponent<FlyingEnemy>())
                 {
                     enemy = hitColliders[i].gameObject;
                     lockOn = true;
@@ -64,7 +66,18 @@ public class turret : MonoBehaviour {
                 }
                 else
                     i++;
-            }
+				}
+				if(antiGround&&antiAir){
+					if (hitColliders[i].GetComponent<Monster>())
+					{
+						enemy = hitColliders[i].gameObject;
+						lockOn = true;
+						break;
+					}
+					else
+						i++;
+				}
+			}
         }
 		if (lockOn == true) {
 			if(enemy==null){
