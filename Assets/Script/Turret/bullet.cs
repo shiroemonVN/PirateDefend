@@ -5,6 +5,7 @@ public class bullet : MonoBehaviour {
 	public GameObject explosion;
 	private GameObject source;
 	public GameObject target;
+	public float arc;
 	public float damage;
 	public float speed ;
 	public float turnSpeed;
@@ -47,7 +48,7 @@ public class bullet : MonoBehaviour {
 			yOsource.y = 0;
 			current = Vector3.Distance (yOTarget, yOGameObject);
 			distance = Vector3.Distance (yOTarget, yOsource);
-			arcCenter = distance *2/ 3;
+			arcCenter = distance *arc;
 			if (current > arcCenter) {
 				gameObject.GetComponent<Rigidbody> ().velocity = transform.forward * speed;
 			} else {
