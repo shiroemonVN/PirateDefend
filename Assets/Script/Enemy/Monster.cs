@@ -2,10 +2,11 @@
 using System.Collections;
 
 public class Monster : MonoBehaviour {
+
+	public GameObject deadEx;
 	public float health;
 	public float score;
 	public int gold;
-    public float shield;
 	// Use this for initialization
 	void Start () {
 	    
@@ -33,6 +34,10 @@ public class Monster : MonoBehaviour {
 		GameObject.Find ("Player").GetComponent<Player> ().addScore (score);
 		GameObject.Find ("Player").GetComponent<Player> ().addGold (gold);
         WaveManager.SetDeadEnemy(WaveManager.GetDeadEnemy() + 1);
-		Destroy (gameObject);
+		Instantiate (deadEx, transform.position, Quaternion.identity);
+		if(transform.root!=transform)
+		  Destroy (transform.parent.gameObject);
+		else
+		  Destroy (gameObject);
 	}
 }

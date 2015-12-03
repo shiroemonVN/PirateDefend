@@ -16,7 +16,7 @@ public class square : MonoBehaviour {
         indicatorScript.pos =  new Vector3(transform.position.x, 10f, transform.position.z);
 
         //Debug.Log(gameObject.tag);
-        if (gameObject.tag == "OnRock" && Player.ChosenItem != null && isFull == false)
+        if (gameObject.tag == "OnRock" && Player.ChosenItem != null && isFull == false && Player.ChosenItem.tag !="Mine")
         {
             if (GameObject.Find("Player").GetComponent<Player>().gold - Player.ChosenItem.GetComponent<turret>().cost >= 0)
             {
@@ -27,12 +27,28 @@ public class square : MonoBehaviour {
             }
             else if (GameObject.Find("Player").GetComponent<Player>().gold - Player.ChosenItem.GetComponent<turret>().cost < 0)
             {
-                GameObject.Find("SFX").GetComponent<SFXManager>().CannotPurchase();
+                GameObject.Find("SFX").GetComponent<SFXManager>().CannotPurchase();                
+                GameObject.Find("NoticeMoney").GetComponent<NoiceScript>().RunIt();
                 turret.isClicked = false;
             }
         }
+        else if (gameObject.tag != "OnRock" && Player.ChosenItem != null && isFull == false)
+        {
+            if(Player.ChosenItem.tag =="Mine" ){
+                ObjOnThisGround = Instantiate(Player.ChosenItem, new Vector3(transform.position.x, 5f, transform.position.z), transform.rotation);
+                GameObject.Find("Player").GetComponent<Player>().addGold(-1 * Player.ChosenItem.GetComponent<MineScript>().cost);
+                Player.ChosenItem = null;
+            }
+        }
+        else if (gameObject.tag != "OnRock" && Player.ChosenItem != null)
+        {
+            GameObject.Find("SFX").GetComponent<SFXManager>().CannotPurchase();
+            GameObject.Find("NoticeMoney").GetComponent<NoiceScript>().RunIt();
+            turret.isClicked = false;
+        }
         else
         {
+
             turret.isClicked = false;
         }
         if (ObjOnThisGround != null && isFull ==true)
