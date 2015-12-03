@@ -7,8 +7,10 @@ public class Shield : MonoBehaviour {
 	public void decreaseHp(float damage){
 		hp -=damage;
 	}
-	public void update(){
-		if (hp <= 0)
+	void Update(){
+		if (hp <= 0) {
+			Debug.Log(hp);
 			Destroy (gameObject);
+		}
 	}
 }

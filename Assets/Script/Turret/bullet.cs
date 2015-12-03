@@ -24,6 +24,11 @@ public class bullet : MonoBehaviour {
 			orther.gameObject.GetComponent<Monster> ().decreaseHealth (damage);
 			impacted();
 		}
+		if (orther.GetComponent<Shield> ()) {
+			orther.gameObject.GetComponent<Shield> ().decreaseHp (damage);
+			Debug.Log("impacted shield");
+			impacted();
+		}
 		if(orther.GetComponent<bullet>()){
 
 		}
