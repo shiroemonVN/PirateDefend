@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class bullet : MonoBehaviour {
+	public bool antiShield;
 	public GameObject explosion;
 	private GameObject source;
 	public GameObject target;
@@ -21,12 +22,17 @@ public class bullet : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter(Collider orther){
 		if (orther.GetComponent<Monster> ()) {
-			orther.gameObject.GetComponent<Monster> ().decreaseHealth (damage);
+			if(antiShield)
+			    orther.gameObject.GetComponent<Monster> ().decreaseHealth (0);
+			else
+				orther.gameObject.GetComponent<Monster> ().decreaseHealth (damage);
 			impacted();
 		}
 		if (orther.GetComponent<Shield> ()) {
-			orther.gameObject.GetComponent<Shield> ().decreaseHp (damage);
-			Debug.Log("impacted shield");
+			if(antiShield)
+			    orther.gameObject.GetComponent<Shield> ().decreaseHp (damage);
+			else
+				orther.gameObject.GetComponent<Shield> ().decreaseHp (damage/4);
 			impacted();
 		}
 		if(orther.GetComponent<bullet>()){
