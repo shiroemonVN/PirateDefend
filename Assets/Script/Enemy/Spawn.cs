@@ -2,16 +2,38 @@
 using System.Collections;
 
 public class Spawn : MonoBehaviour {
-	public GameObject[] enemy;
+	private GameObject[] enemy;
+    public GameObject[] enemyEasy;
+    public GameObject[] enemyNormal;
+    public GameObject[] enemyHard;
 	public float interval=6f;
+    private float modifyableInterval = 0f;
     public WaveManager waveManager;
     public bool first;
+    private string difficult;
 	// Use this for initialization
 	void Start () {
         waveManager = GameObject.Find("WaveManager").GetComponent<WaveManager>();
+        difficult = waveManager.GetGameMode();
+        enemy = new GameObject[] { };
+        modifyableInterval = interval;
+        switch(difficult)
+        {
+            case "EASY":
+                enemy = enemyEasy;
+                break;
+            case "NORMAL":
+                enemy = enemyNormal;
+                modifyableInterval = interval - 1;
+                break;
+            case "HARD":
+                enemy = enemyHard;
+                modifyableInterval = interval - 2;
+                break;
+        }
         if (first)
         {
-            InvokeRepeating("SpawnDebug", 3f, interval);
+            InvokeRepeating("SpawnDebug", 3f, modifyableInterval);
         }
 	}
 
@@ -25,7 +47,7 @@ public class Spawn : MonoBehaviour {
     public void SpawnDebug()
     {
         int currentWave = waveManager.GetWave();
-        if (waveManager.GetEnemyNumber() < waveManager.waveEnemy[currentWave])
+        if (waveManager.GetEnemyNumber() < waveManager.GetCurrentEnemyWave(currentWave))
         {
             int i = Random.Range(0, enemy.Length);
             if (enemy[i].GetComponent<FlyingEnemy>())
@@ -34,7 +56,7 @@ public class Spawn : MonoBehaviour {
                 Instantiate(enemy[i], new Vector3(transform.position.x, transform.position.y, transform.position.z - 5f), new Quaternion(0, 180, 0, 0));
             waveManager.SetEnemyNumber(waveManager.GetEnemyNumber() + 1);
         }
-        else if (waveManager.GetEnemyNumber() >= waveManager.waveEnemy[currentWave] && currentWave == waveManager.waveEnemy.Length - 1)
+        else if (waveManager.GetEnemyNumber() >= waveManager.GetCurrentEnemyWave(currentWave) && currentWave == waveManager.GetWaveLength() - 1)
         {
             waveManager.SetEndWave(true);
         }
@@ -42,7 +64,7 @@ public class Spawn : MonoBehaviour {
 	// Update is called once per fram
     public float GetInterval()
     {
-        return this.interval;
+        return this.modifyableInterval;
     }
     public void CancelSpawn()
     {

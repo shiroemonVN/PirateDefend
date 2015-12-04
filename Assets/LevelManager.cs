@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿//file nay chua can dung den
+
+using UnityEngine;
 using System.Collections;
 
-public class WaveManager : MonoBehaviour {
+public class LevelManager : MonoBehaviour {
 
     public GameObject[] spawnPoints;
     public static int waveCount = 0;
@@ -18,14 +20,12 @@ public class WaveManager : MonoBehaviour {
     private int difficulty;
     private string GameMode;
     private int[] waveEnemy;
-
 	// Use this for initialization
-    void Start()
-    {
+	void Start () {
         GameMode = PlayerPrefs.GetString("Mode", "EASY");
         currentActiveSpawnPoint = 0;
-        waveEnemy = new int[5];
-        switch (GameMode)
+        waveEnemy = new int [5];
+        switch(GameMode)
         {
             case "":
                 break;
@@ -42,80 +42,32 @@ public class WaveManager : MonoBehaviour {
                 difficulty = 3;
                 break;
         }
-    }
+	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (version == 1)
-        {
-            int currentWave = GetWave();
-            if (GetEnemyNumber() >= waveEnemy[currentWave] && !GetEndWave())
-            {
-                spawnPoints[currentActiveSpawnPoint].GetComponent<Spawn>().CancelInvoke("SpawnDebug");
-                //int nextWave = currentWave + 1;
-                if (GetDeadEnemy() >= waveEnemy[currentWave])
-                {
-                    timer += Time.deltaTime;
-                    if (timer >= 15)
-                    {
-                        timer = 0;
-                        SetEnemyNumber(0);
-                        SetDeadEnemy(0);
-                        if (currentWave + 1 < waveEnemy.Length)
-                        {
-                            SetWave(currentWave + 1);
-                            int i = Random.Range(0, spawnPoints.Length);
-                            currentActiveSpawnPoint = i;
-                            spawnPoints[i].GetComponent<Spawn>().InvokeRepeating("SpawnDebug", 3f, spawnPoints[i].GetComponent<Spawn>().GetInterval());
-                        }
-                    }
-                }
-            }
-            else if (GetEndWave())
-            {
-                spawnPoints[0].GetComponent<Spawn>().CancelInvoke("SpawnDebug");
-                //this.GetComponents<Spawn>().
-            }
-        }
-        else if (version ==2)
-        {
-            int currentWave = GetWave();
-            if (GetEnemyNumber() >= waveEnemy[currentWave] && !GetEndWave())
-            {
-                for (int i = 0; i < spawnPoints.Length; i++)
-                {
-                    spawnPoints[i].GetComponent<Spawn>().CancelInvoke("SpawnDebug");
-                }
-                int nextWave = currentWave + 1;
-                if (GetDeadEnemy() >= waveEnemy[currentWave])
-                {
-                    timer += Time.deltaTime;
-                    if (timer >= 10)
-                    {
-                        timer = 0;
-                        SetEnemyNumber(0);
-                        SetDeadEnemy(0);
-                        if (currentWave + 1 < waveEnemy.Length)
-                        {
-                            SetWave(currentWave + 1);
-                            //int i = Random.Range(0, spawnPoint.Length);
-                            for (int i = 0; i < spawnPoints.Length; i++)
-                            {
-                                spawnPoints[i].GetComponent<Spawn>().InvokeRepeating("SpawnDebug", 3f, spawnPoints[i].GetComponent<Spawn>().GetInterval());
-                            }
-                        }
-                    }
-                }
-            }
-            else if (GetEndWave())
-            {
-                for (int i = 0; i < spawnPoints.Length; i++)
-                {
-                    spawnPoints[i].GetComponent<Spawn>().CancelInvoke("SpawnDebug");
-                }
-            }
-        }
+	
 	}
+
+    public void EasyGame()
+    {
+        int currentWave = GetWave();
+        int waveNumber = 4;
+        //EasyConfig easy = new EasyConfig();
+    }
+    public void NormalGame()
+    {
+        int currentWave = GetWave();
+        int waveNumber = 4;
+
+        //NormalConfig normal = new NormalConfig();
+    }
+    public void HardGame()
+    {
+        int currentWave = GetWave();
+        int waveNumber = 5;
+        //HardConfig hard = new HardConfig();
+    }
 
     public void Version1()
     {
@@ -137,7 +89,7 @@ public class WaveManager : MonoBehaviour {
                         SetWave(currentWave + 1);
                         int i = Random.Range(0, spawnPoints.Length);
                         currentActiveSpawnPoint = i;
-                        spawnPoints[i].GetComponent<Spawn>().InvokeRepeating("SpawnDebug", 3f, spawnPoints[i].GetComponent<Spawn>().GetInterval());
+                        spawnPoints[i].GetComponent<Spawn>().InvokeRepeating("SpawnDebug", 3f, 6f);
                     }
                 }
             }
@@ -172,7 +124,7 @@ public class WaveManager : MonoBehaviour {
                         //int i = Random.Range(0, spawnPoint.Length);
                         for (int i = 0; i < spawnPoints.Length; i++)
                         {
-                            spawnPoints[i].GetComponent<Spawn>().InvokeRepeating("SpawnDebug", 3f, spawnPoints[i].GetComponent<Spawn>().GetInterval());
+                            spawnPoints[i].GetComponent<Spawn>().InvokeRepeating("SpawnDebug", 3f, 6f);
                         }
                     }
                 }
@@ -223,16 +175,36 @@ public class WaveManager : MonoBehaviour {
     {
         deadEnemy = dead;
     }
-    public string GetGameMode()
-    {
-        return GameMode;
-    }
-    public int GetCurrentEnemyWave(int current)
-    {
-        return waveEnemy[current];
-    }
-    public int GetWaveLength()
-    {
-        return waveEnemy.Length;
-    }
 }
+
+//public class EasyConfig
+//{
+//    public int waveNumber;
+//    public GameObject[][] enemy;
+//    public EasyConfig()
+//    {
+//        waveNumber = 4;
+//        enemy = new GameObject[waveNumber][];
+//    }
+//}
+
+//public class NormalConfig
+//{
+//    public int waveNumber;
+//    public GameObject[][] enemy;
+//    public NormalConfig()
+//    {
+//        waveNumber = 4;
+//        enemy = new GameObject[waveNumber][];
+//    }
+//}
+//public class HardConfig
+//{
+//    public int waveNumber;
+//    public GameObject[][] enemy;
+//    public HardConfig()
+//    {
+//        waveNumber = 5;
+//        enemy = new GameObject[waveNumber][];
+//    }
+//}
