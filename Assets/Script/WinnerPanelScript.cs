@@ -15,8 +15,9 @@ public class WinnerPanelScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (wave.GetEndWave() && Player.health !="0")
+	    if (wave.GetEndWave() && Player.health !="0" && showUp == false)
         {
+            //PlayerPrefs.SetInt("Money", PlayerPrefs.GetInt("Money") + GameObject.Find("Player").GetComponent<Player>().gold);
             showUp = !showUp;
         }
         if (showUp == true)

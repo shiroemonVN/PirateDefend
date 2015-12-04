@@ -16,16 +16,18 @@ public class WaveManager : MonoBehaviour {
     private int currentActiveSpawnPoint;
     public int version;
     private int difficulty;
-    private string GameMode;
+    //private string GameMode;
     private int[] waveEnemy;
 
 	// Use this for initialization
     void Start()
     {
-        GameMode = PlayerPrefs.GetString("Mode", "EASY");
+        //GameMode = PlayerPrefs.GetString("Mode", "EASY");
+        //Debug.Log(GameMode);
         currentActiveSpawnPoint = 0;
         waveEnemy = new int[5];
-        switch (GameMode)
+        //Debug.Log(Camera.main.GetComponent<GameMode>().GetGameMode());
+        switch (Camera.main.GetComponent<GameMode>().GetGameMode())
         {
             case "":
                 break;
@@ -223,10 +225,7 @@ public class WaveManager : MonoBehaviour {
     {
         deadEnemy = dead;
     }
-    public string GetGameMode()
-    {
-        return GameMode;
-    }
+    
     public int GetCurrentEnemyWave(int current)
     {
         return waveEnemy[current];

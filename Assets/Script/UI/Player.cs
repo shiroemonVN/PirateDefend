@@ -29,6 +29,11 @@ public class Player : MonoBehaviour {
         //{
         //    score = 0;
         //}
+        //int storedGold = PlayerPrefs.GetInt("Money", 0);
+        //Debug.Log(storedGold);
+        //gold += storedGold;
+        //Debug.Log(gold);
+
         score = 0;
         health = hitPoint.ToString();
         coin = gold.ToString();

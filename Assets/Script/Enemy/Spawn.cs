@@ -14,13 +14,16 @@ public class Spawn : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         waveManager = GameObject.Find("WaveManager").GetComponent<WaveManager>();
-        difficult = waveManager.GetGameMode();
+        difficult = Camera.main.GetComponent<GameMode>().GetGameMode();
+        //Debug.Log(difficult);
         enemy = new GameObject[] { };
         modifyableInterval = interval;
         switch(difficult)
         {
             case "EASY":
                 enemy = enemyEasy;
+                //Debug.Log(enemy.Length);
+                //Debug.Log(enemyEasy.Length);
                 break;
             case "NORMAL":
                 enemy = enemyNormal;
@@ -44,11 +47,13 @@ public class Spawn : MonoBehaviour {
         else
             Instantiate(enemy[i], new Vector3(transform.position.x, transform.position.y, transform.position.z - 5f),new  Quaternion(0,180,0,0));
 	}
+
     public void SpawnDebug()
     {
         int currentWave = waveManager.GetWave();
         if (waveManager.GetEnemyNumber() < waveManager.GetCurrentEnemyWave(currentWave))
         {
+            //Debug.Log(enemy.Length);
             int i = Random.Range(0, enemy.Length);
             if (enemy[i].GetComponent<FlyingEnemy>())
                 Instantiate(enemy[i], new Vector3(transform.position.x, 20, transform.position.z), new Quaternion(0, 180, 0, 0));
