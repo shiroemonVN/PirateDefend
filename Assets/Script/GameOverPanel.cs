@@ -4,7 +4,7 @@ using System.Collections;
 public class GameOverPanel : MonoBehaviour {
     public bool gameover;
     public float speed;
-	private float[] highScore=new float[5];
+	public float[] highScore=new float[5];
 	// Use this for initialization
 
 	public bool checkScore(float score,float[] highScore){
@@ -12,10 +12,12 @@ public class GameOverPanel : MonoBehaviour {
 		for (int i=0; i<highScore.Length; i++) {
 			if(score>=highScore[i]){
 				highScored=true;
-				float temp;
+				float temp=highScore[i];
+				float tempx;
 				for(int j=i+1;j<highScore.Length;j++){
-					temp=highScore[j];
-					highScore[j]=highScore[j-1];
+					tempx=highScore[j];
+					highScore[j]=temp;
+					temp=tempx;
 				}
 				highScore[i]=score;
 				break;
@@ -27,11 +29,13 @@ public class GameOverPanel : MonoBehaviour {
 	void Start () {
         gameover = false;
         speed = 5f;
-		for (int i=0; i<5; i++) {
-			highScore [i] = PlayerPrefs.GetFloat ("HighScore" + i + 1);
-		}
-		for(int i=0;i<highScore.Length;i++){
-			Debug.Log (PlayerPrefs.GetFloat("HighScore"+i+1));
+		highScore [0] = PlayerPrefs.GetFloat ("HighScore0");
+		highScore [1] = PlayerPrefs.GetFloat ("HighScore1");
+		highScore [2] = PlayerPrefs.GetFloat ("HighScore2");
+		highScore [3] = PlayerPrefs.GetFloat ("HighScore3");
+		highScore [4] = PlayerPrefs.GetFloat ("HighScore4");
+		for (int i =0; i<5; i++) {
+			Debug.Log(highScore[i]);
 		}
 	}
 	
@@ -40,9 +44,12 @@ public class GameOverPanel : MonoBehaviour {
         if (Player.health == "0")
         {
 			if(checkScore(GameObject.Find("Player").GetComponent<Player>().score,highScore)){
-				for(int i=0;i<highScore.Length;i++){
-					PlayerPrefs.SetFloat("HighScore"+i+1,highScore[i]);
-				}
+		
+			PlayerPrefs.SetFloat("HighScore0",highScore[0]);
+			PlayerPrefs.SetFloat("HighScore1",highScore[1]);
+			PlayerPrefs.SetFloat("HighScore2",highScore[2]);
+			PlayerPrefs.SetFloat("HighScore3",highScore[3]);
+			PlayerPrefs.SetFloat("HighScore4",highScore[4]);
 			}
 
            gameObject.transform.localScale += new Vector3(speed * Time.deltaTime, speed * Time.deltaTime, speed * Time.deltaTime);
