@@ -10,9 +10,18 @@ public class GameControllerLevelScene : MonoBehaviour {
         clickedLevel = false;
 	}
 
-    public void setClickedLevel()
+    public void setClickedLevel(int level)
     {
-        
+        chosenLevel = level;
+        if (clickedLevel == false)
+        {
+            clickedLevel = true;
+        }
+        else if (clickedLevel == true)
+        {
+            chosenLevel = 0;
+            clickedLevel = false;
+        }
     }
 
 
@@ -22,9 +31,14 @@ public class GameControllerLevelScene : MonoBehaviour {
             Application.LoadLevel("WelcomeMenu");
 	}
 
-    public void PlayGame(int level)
+    public void PlayGame()
     {
         clickedLevel = !clickedLevel;
-        Application.LoadLevel("Level"+level);
+        int level = chosenLevel;
+        chosenLevel = 0;
+        if (level!=0)
+        {
+            Application.LoadLevel("Level" + level);
+        }
     }
 }

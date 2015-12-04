@@ -18,6 +18,7 @@ public class turret : MonoBehaviour {
 	private GameObject[] barrel;
     public static bool isClicked;
     public static bool isUpraded;
+    public bool fired = false;
    
 	void Start(){
 		GameObject temp=(GameObject)Instantiate (appearEfect,transform.position,Quaternion.identity);
@@ -100,6 +101,7 @@ public class turret : MonoBehaviour {
 	}
 
 	void fire(){
+        fired = true;
 		if (Time.time > cooldown + lastShot) {
 			for(int i=0;i<barrel.Length;i++){
 				GameObject instance=(GameObject)Instantiate(bullet,barrel[i].transform.position,barrel[i].transform.rotation);
@@ -115,6 +117,7 @@ public class turret : MonoBehaviour {
         isClicked = true;
         GameObject.Find("ButtonUpgrade").gameObject.GetComponent<ButtonUpgrade>().setChosenOnject(gameObject);
         GameObject.Find("ButtonSell").gameObject.GetComponent<ButtonSell>().setChosenOnject(gameObject);
+        GameObject.Find("ButtonUndo").gameObject.GetComponent<ButtonUndo>().setChosenOnject(gameObject);
         
     }
 	void OnMouseUpAsButton(){
@@ -147,5 +150,10 @@ public class turret : MonoBehaviour {
             Destroy(gameObject);
         }
         //else Debug.Log("Cant upgrade");
+    }
+
+    public void UnDo()
+    {
+
     }
 }
