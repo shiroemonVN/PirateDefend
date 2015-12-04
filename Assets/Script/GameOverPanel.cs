@@ -33,7 +33,7 @@ public class GameOverPanel : MonoBehaviour {
         speed = 5f;
 		for (int i =0; i<5; i++) {
 			highScore [i] = PlayerPrefs.GetFloat ("HighScore"+i);
-			Debug.Log(highScore[i]);
+			//Debug.Log(highScore[i]);
 		}
 	}
 	

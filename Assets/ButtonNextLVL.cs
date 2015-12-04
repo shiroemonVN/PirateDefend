@@ -13,7 +13,7 @@ public class ButtonNextLVL : MonoBehaviour {
 	
 	}
 
-    void LoadNextLevel(int level)
+    public void LoadNextLevel(int level)
     {
         if (level == 0 || level == null)
         {
