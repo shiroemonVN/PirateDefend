@@ -5,7 +5,7 @@ public class GameOverPanel : MonoBehaviour {
 	private bool setScore=true;
     public bool gameover;
     public float speed;
-	public float[] highScore=new float[5];
+	private float[] highScore=new float[5];
 	// Use this for initialization
 
 	public bool checkScore(float score,float[] highScore){
@@ -31,11 +31,6 @@ public class GameOverPanel : MonoBehaviour {
 	void Start () {
         gameover = false;
         speed = 5f;
-		//highScore [0] = PlayerPrefs.GetFloat ("HighScore0");
-		//highScore [1] = PlayerPrefs.GetFloat ("HighScore1");
-		//highScore [2] = PlayerPrefs.GetFloat ("HighScore2");
-		//highScore [3] = PlayerPrefs.GetFloat ("HighScore3");
-		//highScore [4] = PlayerPrefs.GetFloat ("HighScore4");
 		for (int i =0; i<5; i++) {
 			highScore [i] = PlayerPrefs.GetFloat ("HighScore"+i);
 			Debug.Log(highScore[i]);
@@ -49,12 +44,10 @@ public class GameOverPanel : MonoBehaviour {
 			if(setScore){
 				setScore=false;
 			if(checkScore(GameObject.Find("Player").GetComponent<Player>().score,highScore)){
-			PlayerPrefs.SetFloat("HighScore0",highScore[0]);
-			PlayerPrefs.SetFloat("HighScore1",highScore[1]);
-			PlayerPrefs.SetFloat("HighScore2",highScore[2]);
-			PlayerPrefs.SetFloat("HighScore3",highScore[3]);
-			PlayerPrefs.SetFloat("HighScore4",highScore[4]);
-			}
+					for(int i =0;i<highScore.Length;i++){
+						PlayerPrefs.SetFloat("HighScore"+i,highScore[i]);
+					}
+				}
 			}
 
            gameObject.transform.localScale += new Vector3(speed * Time.deltaTime, speed * Time.deltaTime, speed * Time.deltaTime);
